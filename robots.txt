@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /etc
+
+Sitemap: https://atri.tk/sitemap.xml
+Sitemap: https://blog.atri.tk/sitemap.xml

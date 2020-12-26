@@ -9,6 +9,9 @@
   <url>
     <loc>https://blog.atri.tk/</loc>
   </url>
+  <sitemap>
+    <loc>https://blog.atri.tk/sitemap.xml</loc>
+  </sitemap>
   <url>
     <loc>https://drive.atri.tk/</loc>
   </url>
