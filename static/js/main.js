@@ -20,16 +20,20 @@ function qSlt(selector) {
 function qSltAll(selector) {
     return document.querySelectorAll(selector);
 }
-function dateParser (str){
+
+function dateParser(str) {
     var reg = new RegExp("([0-9]{2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec){1} ([0-9]{4})");
     reg = reg.exec(str);
-    if(!reg){return false;}
-    var monthMap = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    if (!reg) {
+        return false;
+    }
+    var monthMap = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     var day = reg[1];
-    var month = monthMap.lastIndexOf(reg[2])+1;
+    var month = monthMap.lastIndexOf(reg[2]) + 1;
     var year = reg[3];
-    return year+"-"+month+"-"+day;
+    return year + "-" + month + "-" + day;
 }
+
 function setArtTip(content) {
     qSlt(".article-content").classList.add("empty");
     qSlt(".article-content").innerHTML = content;
@@ -43,7 +47,8 @@ function randomSet(set) {
         set[i] = p;
     }
 }
-function articleOutput(data){
+
+function articleOutput(data) {
     for (var i = 0; i < data.length; i++) {
         qSlt(".article-content").innerHTML += '<p class="article-item"><a target="_blank" class="article-title" href="' + data[i].link + '">' + data[i].title + '</a><span class="article-time">' + data[i].timestamp + '</span></p>';
     }
@@ -58,33 +63,37 @@ feed.addEventListener("load", function () {
         return;
     }
     try {
-        if(feedType === "json"){
+        if (feedType === "json") {
             var data = JSON.parse(feed.responseText);
             if (!data || data.status === -1) {
                 throw new Error();
             }
             data = data.data;
-        } else if(feedType === "xml"){
+        } else if (feedType === "xml") {
             var xml = feed.responseXML;
-            if(!xml){
+            if (!xml) {
                 throw new Error();
             }
             var data = [];
-            if(xml.querySelector("rss") != null){
-                xml.querySelectorAll("channel item").forEach(function (v,i){
-                    if(i > 7){ return; }
+            if (xml.querySelector("rss") != null) {
+                xml.querySelectorAll("channel item").forEach(function (v, i) {
+                    if (i > 7) {
+                        return;
+                    }
                     data.push({
                         "link": v.querySelector("link").innerHTML,
                         "timestamp": dateParser(v.querySelector("pubDate").innerHTML),
                         "title": v.querySelector("title").innerHTML
                     });
                 });
-            } else if(xml.querySelector("feed") != null) {
-                xml.querySelectorAll("feed entry").forEach(function (v,i){
-                    if(i > 7){ return; }
+            } else if (xml.querySelector("feed") != null) {
+                xml.querySelectorAll("feed entry").forEach(function (v, i) {
+                    if (i > 7) {
+                        return;
+                    }
                     data.push({
                         "link": v.querySelector("link").getAttribute("href"),
-                        "timestamp": v.querySelector("published").innerHTML.slice(0,10),
+                        "timestamp": v.querySelector("published").innerHTML.slice(0, 10),
                         "title": v.querySelector("title").innerHTML
                     });
                 });
@@ -153,7 +162,9 @@ window.addEventListener("DOMContentLoaded", function () {
                 v.classList.add("selected");
             });
         });
-    }, {once: true});
+    }, {
+        once: true
+    });
 });
 console.log("\n %c Present  %c By Zapic.      \n\n", "color: #fff; background: #fb7299; padding:5px 0;", "background: #efefef; padding:5px 0;");
-console.log("\n %c Modified %c By Misaka13514.\n\n", "color: #fff; background: #fb7299; padding:5px 0;", "background: #efefef; padding:5px 0;"); 
+console.log("\n %c Modified %c By Misaka13514.\n\n", "color: #fff; background: #fb7299; padding:5px 0;", "background: #efefef; padding:5px 0;");
