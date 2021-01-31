@@ -7,6 +7,9 @@
     <loc>https://atri.tk/about/</loc>
   </url>
   <url>
+    <loc>https://atri.tk/melon/</loc>
+  </url>
+  <url>
     <loc>https://blog.atri.tk/</loc>
   </url>
   <sitemap>
@@ -20,5 +23,14 @@
   </url>
   <url>
     <loc>https://clash.atri.tk/</loc>
+  </url>
+  <url>
+    <loc>https://sub.atri.tk/</loc>
+  </url>
+  <url>
+    <loc>https://yacd.atri.tk/</loc>
+  </url>
+  <url>
+    <loc>https://proxy.atri.tk/</loc>
   </url>
 </urlset>
