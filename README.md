@@ -1,58 +1,98 @@
-# :gift:Present
+# Misaka13514's home page
 
-Present is presented by Zapic:gift_heart:.  
-一个简洁的个人主页,支持显示博客文章/随机背景图片/随机语句.  
-[即时预览](https://kawaiizapic.github.io/Present/)
-![preview.png](https://i.loli.net/2020/11/15/ukl6jRxNm8O7bD2.png)
+Misaka13514's home page locate at [atri.tk](https://atri.tk)!
 
-### Browser support:
-|  IE   | Chrome  | Firefox   | Other  |
-|  ----  | ----  |  ----  | ----  |
-| 11+(Partial Support)  | 49+ | 52+  | (?) |
+---
 
-## Setting-up:
+## Site of Misaka13514
 
-### 随机背景图片
-1. 将图片放入`static/img/`内.
-2. 建议放入一个图片的缩略图优化加载体验.
-3. 在`index.html`内找到`var bgArr = [...`
-4. 按以下格式添加一个对象:
-```
-{
-	"url": "static/img/background.jpg",
-	"thumb": "static/img/background-thumb.jpg" // 如果没有缩略图,可以留空.
-}
-```
-5. 如果不会可以简单的学一下`JavaScript`语法.
+- [home page](https://atri.tk/)
+- [about page](https://atri.tk/about/)
+- [blog](https://blog.atri.tk/)
+- [friend links](https://blog.atri.tk/links/)
+- [sitemap](https://atri.tk/sitemap.xml) including more web pages and services.
+- ~~[robots.txt](https://atri.tk/robots.txt) including something useless and disallowed.~~
 
-### 随机语句
-1. 在`index.html`内找到`var senArr = [...`
-2. 按照 [Typinyin.js](https://github.com/ClassicOldSong/typinyin.js) 的文档添加语句.
-3. 如果不会可以简单的学一下`JavaScript`语法.
+### Get in touch
 
+Enough information is available on my website and will not be repeated here.
 
-### 博客文章输出
+### Open source codes
 
-#### JSON模式
-此模式无需设置跨域,仅需提供PHP支持,由后端解析XML文档,传输数据量较少,推荐使用.  
-**注意:** 使用本功能,你的服务器必须支持`PHP 5.6+`,并启用`XML`拓展.
+You can see most of them in [Repositories of Misaka13514](https://github.com/Misaka13514?tab=repositories).
 
-1. 在`index.html`内找到`var feedType=...`,修改为`json`.
-2. 在`feed.php`内找到`$feed_url`;
-3. 将`$feed_url`修改为你的博客RSS订阅地址.
-4. 如果不会可以简单的学一下`PHP`语法.
+### Exchange your friend link
 
-#### XML模式
-此模式**需设置** 跨域,无需提供PHP支持,由前端解析XML文档,传输数据量较多,在无PHP环境情况下推荐使用.  
-此处不提供跨域教程,请自行搜索.
+Follow this [README.md](https://github.com/Misaka13514/Friends/blob/master/README.md).
 
-1. 在`index.html`内找到`var feedType=...`,修改为`xml`,
-2. 在`index.html`内找到`var feedPath=...`,修改为你的博客RSS地址,如`https://blog.me/feed`;
-3. 如果不会可以简单的学一下`JavaScript`语法.
+## Dependencies and acknowledgements
 
-### 链接图标
-链接图标列表: [Font Awesome](https://fontawesome.dashgame.com/)  
-1. 在列表里找到心仪的图标
-2. 点击`复制`按钮
-3. 找到需要修改的图标(图标元素均为`i`,拥有`fa`类)
-4. 删除原有的图标class(`fa-*`),将新的粘贴进去.
+The formations of this project and its sub-projects are inseparable from:
+
+- You and other visitors.
+
+  Knowledgeable, kawaii, friendly visitors.
+
+- Friends in [the friend link page](https://blog.atri.tk/links/).
+
+  Exchanged link with me and bear watching.
+
+- [Github](https://github.com/about) [@github](https://github.com/github)
+
+  A supportive, welcoming place for users and GitHubbers alike.
+
+- [Github Pages](https://pages.github.com)
+
+  A static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub
+
+- [Github Actions](https://github.com/features/actions)
+
+  GitHub Actions makes it easy to automate all your software workflows.
+
+- and other GitHub services.
+
+- [Hexo](https://hexo.io) [@hexojs](https://github.com/hexojs)
+
+  A fast, simple & powerful blog framework, powered by Node.js.
+
+- [NexT](https://theme-next.js.org) [@theme-next](https://github.com/theme-next)
+
+  A high quality elegant and powerful theme for Hexo.
+
+- [Gravatar](https://en.gravatar.com)
+
+  A service for providing globally unique avatars.
+
+- [Disqus](https://disqus.com)
+
+  A blog comment hosting service for web sites and online communities.
+
+- [Present](https://github.com/KawaiiZapic/Present) [@KawaiiZapic](https://github.com/KawaiiZapic)
+
+  A simple personal home page template with support for displaying blog posts.
+
+- [Atomicneko](https://github.com/amphineko/atomicneko) [@amphineko](https://github.com/amphineko)
+
+  A popular simple homepage (or template).
+
+- All the dependencies including packages and programming languages.
+
+- [Cloudflare CDN](https://www.cloudflare.com/cdn)
+
+  A fast, agile, and secure global network.
+
+- [Cloudflare DNS](https://www.cloudflare.com/dns)
+
+  Fast, Secure, and Resilient DNS.
+
+- and other cloudflare services.
+
+- Transmission medium
+
+- Network protocols
+
+- World Wide Web
+
+- Browsers
+
+- And more!
