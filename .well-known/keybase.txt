@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/misaka13514
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://misaka.pages.dev
+  * I am misaka13514 (https://keybase.io/misaka13514) on keybase.
+  * I have a public key ASBoH8XRqdprhvK0Xhd-IvlQLx0Mo4dMe9UCCLlUnzDIDQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120471897278155ca8038e73de109bc5146074c0db52bd422dcc4b74ad185670ee10a",
+      "host": "keybase.io",
+      "kid": "0120681fc5d1a9da6b86f2b45e177e22f9502f1d0ca3874c7bd50208b9549f30c80d0a",
+      "uid": "d33cf0f1e76cdc3a1b88b5f5a16b7019",
+      "username": "misaka13514"
+    },
+    "merkle_root": {
+      "ctime": 1625656140,
+      "hash": "5770e050c342038e1c97c01b71161de6053afd4d72a77ff967f2099366f1b2b4a441e233f4d34eefc9ded65e8347c091a85bd903b6d717c6b5feae9c96b8104e",
+      "hash_meta": "b51266b0e7a06c3c70bf33182b804a98d2471eae203f6cb88e2ca616bf661799",
+      "seqno": 20328879
+    },
+    "service": {
+      "entropy": "r7RDT1Di66zsA20mdtq10xfi",
+      "hostname": "misaka.pages.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.1"
+  },
+  "ctime": 1625656166,
+  "expire_in": 504576000,
+  "prev": "8d3faa2822e33a71fd2960d1d2acc4442e3e9333f74c0286bcb4fa4bbe1e6f24",
+  "seqno": 35,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgaB/F0anaa4bytF4XfiL5UC8dDKOHTHvVAgi5VJ8wyA0Kp3BheWxvYWTESpcCI8QgjT+qKCLjOnH9KWDR0qzERC4+kzP3TAKGvLT6S74ebyTEILUvHjQ/TuKlxMNNfNv4jjEg0tmR3tW+UbLPccQAq1ATAgHCo3NpZ8RA91JjEIQMsb3If6pKzCyQYDhgRiRZu/+jeQxTwJ2jIHSoqnrTvjEAFiRZMDD+fGvvHko++jzHTrNpjY6xcG+bC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAJst+dLOASzIKcPuL+nU3ki9Evv/vcEFEOL46RiS185o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/misaka13514
+
+==================================================================
