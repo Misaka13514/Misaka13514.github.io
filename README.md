@@ -7,7 +7,7 @@ Misaka13514's home page locate at [atri.tk](https://atri.tk)!
 ## Site of Misaka13514
 
 - [home page](https://atri.tk/)
-- [about page](https://atri.tk/about/)
+- [about page](https://i.atri.tk/)
 - [blog](https://blog.atri.tk/)
 - [friend links](https://blog.atri.tk/links/)
 - [sitemap](https://atri.tk/sitemap.xml) including more web pages and services.
